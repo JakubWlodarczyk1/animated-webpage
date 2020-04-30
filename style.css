@@ -11,13 +11,10 @@ ion-icon {
     box-sizing: border-box;
   }
 
-body {
+body, html {
     font-family:'Nunito Sans', sans-serif;
     line-height: 1.5;
-  }
-
-  section {
-      min-height: 100vh;
+    height: 100vh;
   }
 
   /* loader  */
@@ -56,30 +53,6 @@ body {
     to{
         transform: rotate(360deg);
     }
-}
-
-/* navigation bar  */
-
-.menu nav ul  {
-  list-style: none;
-}
-
-.menu nav ul li {
-    font: menu;
-    font-size: 20px;
-    font-weight: 300;
-    padding-bottom: 15px;
-    text-align: left;
-}
-
-.menu nav ul li a {
-    text-decoration: none;
-    color: rgb(36, 35, 34);
-    display: none;
-}
-
-.menu nav ion-icon:hover {
-    
 }
 
 /* fisrt page  */
@@ -217,110 +190,95 @@ body {
 /* SECOND PAGE */
 
 .s2 {
+    height:100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background: linear-gradient(to right top, #c9babaad, #3b2f2e);
     position: relative;
-    background: linear-gradient(to right top, #c9baba, #5f4a48);
-    padding: 50px;
 }
 
-.cake1-img {
-    width: 400px;
-    height: 400px;
+.cake-img {
+    height: 50%;
+    object-fit: cover;
+    order: 2;
+    width: 50%;
+    border-radius: 50px;
+    opacity: 0.8;
 }
 
 .cake-recipes {
-    position: relative;
+    position: absolute;
     top: 0;
     font-size: 40px;
     text-align: center;
+    margin: 20px auto;
+    width: 100%;
 }
 
 .cake-recipes h1 {
-    font-weight: 400;
+    font-weight: 400
 }
 
-.cake1div {
+.recipe {
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 10%;
+}
+
+.preparation {
+    text-align: left;
+    justify-content: flex-start;
     order: 2;
 }
 
-.recipe1 {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    margin-top: 50px;
-    align-content: center;
-    align-items: stretch;
-    margin-right: 50px;
-    margin-top: 150px;
-}
-
-.preparation1 {
-    flex-shrink: 10;
-}
-
-.preparation1 h3 {
+.preparation h3 {
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.preparation1 p {
-    line-height: 2;
-}
-
-#space {
-    padding-left: 50px;
-}
-
-/* third page  */
-.s3 {
-    position: relative;
-    background: linear-gradient(to right top, #c9baba, #5f4a48);
-    padding: 50px;
-}
-
-.cake2-img {
-    width: 400px;
-    height: 400px;
-}
-
-.cake-recipes2 {
-    position: relative;
-    top: 0;
+    margin:40px auto;
+    font-weight: 400;
     font-size: 40px;
-    text-align: center;
 }
 
-.cake-recipes2 h1 {
-    font-weight: 400;
-}
-
-.cake2div {
-    order: 2;
-}
-
-.recipe2 {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    margin-top: 50px;
-    align-content: center;
-    align-items: stretch;
-    margin-right: 50px;
-    margin-top: 150px;
-}
-
-.preparation2 {
-    flex-shrink: 10;
-}
-
-#space2 {
-    padding-left: 50px;
-}
-
-.preparation2 p {
+.preparation p {
     line-height: 2;
+    font-weight: 300;
 }
 
-.preparation2 h3 {
-    text-align: center;
-    margin-bottom: 20px;
+.ingredients {
+    width: 50%;
+    height: 50%;
+}
+
+.ingredients h3 {
+    text-align: left;
+    margin: 10px auto;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.ingredients ul {
+    text-align: left;
+    list-style-type: none ;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.ingredients ul li {
+    font-weight: 300;
+}
+
+.multicolor {
+    background-image: linear-gradient(to left, rgba(128, 19, 236, 0.973), rgb(115, 122, 189), rgb(59, 59, 136), rgb(59, 141, 59), rgb(180, 180, 77), rgba(168, 137, 74, 0.349), rgb(185, 115, 115));
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
