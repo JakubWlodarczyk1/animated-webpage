@@ -57,7 +57,6 @@ body, html {
 
 /* fisrt page  */
 .title {
-    top: 30px;
     font-weight: 300;
     font-size: 60px; 
 }
@@ -66,7 +65,7 @@ body, html {
     position: relative;
     height: 100vh;
     display: flex;
-    padding: 0 20;
+    padding: 0 20px;
     color: white;
     text-align: center;
     justify-content: center;
@@ -81,7 +80,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: var(--primary-color) url('./images/start-ciasto.png') no-repeat center center/cover;
+    background: url('./images/start-ciasto.png') no-repeat center center/cover;
 }
 
 .content {
@@ -190,53 +189,45 @@ body, html {
 /* SECOND PAGE */
 
 .s2 {
-    height:100vh;
+    position: relative;
+    min-height: 100vh;
     display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: center;
     background-size: cover;
     background: linear-gradient(to right top, #c9babaad, #3b2f2e);
-    position: relative;
+    flex-direction: column;
+    padding: 0 250px;
+}
+
+.cake-img-class {
+order:2;
 }
 
 .cake-img {
-    height: 50%;
-    object-fit: cover;
-    order: 2;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     border-radius: 50px;
     opacity: 0.8;
 }
 
 .cake-recipes {
-    position: absolute;
-    top: 0;
+    position: relative;
     font-size: 40px;
-    text-align: center;
-    margin: 20px auto;
-    width: 100%;
+    margin: 50px auto;
 }
 
 .cake-recipes h1 {
     font-weight: 400
 }
 
-.recipe {
-    left: 0;
-    position: absolute;
+.cake_ingredients {
     display: flex;
+    position: relative;
     flex-direction: row;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 40px 10%;
 }
 
 .preparation {
     text-align: left;
-    justify-content: flex-start;
-    order: 2;
 }
 
 .preparation h3 {
@@ -251,11 +242,6 @@ body, html {
     font-weight: 300;
 }
 
-.ingredients {
-    width: 50%;
-    height: 50%;
-}
-
 .ingredients h3 {
     text-align: left;
     margin: 10px auto;
@@ -263,11 +249,13 @@ body, html {
     font-size: 40px;
 }
 
+.ingredients {
+    width: 100%;
+}
+
 .ingredients ul {
-    text-align: left;
-    list-style-type: none ;
-    justify-content: flex-start;
-    align-items: center
+  text-align: left;
+  margin-left: 20px;
 }
 
 .ingredients ul li {
