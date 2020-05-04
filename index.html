@@ -9,15 +9,18 @@
 </head>
 <body>
    
-  
     <section class='showcase'>
         <div class="loader-container">
             <div class="loader"></div>
         </div>
-      
-        <div class='menu'>
+       <div class='nav-menu'>
             <nav>
                 <ion-icon class='menu-img' name="menu-outline"></ion-icon>
+                <ul class='nav-links'> 
+                    <li><a id='git' href='https://github.com/j0hnny02/animated-webpage' target="_blank">GITHUB</a></li>
+                    <li><a id='menu-chapter'>Cake:</a></li>
+                    <li><a id='cake-category' href='#s2'>Milky Way</a></li>
+                </ul>
             </nav>
         </div>
         <div class = 'video-container'>
@@ -77,10 +80,26 @@
         </div>
     </section>
 
-    <script>
+    <script jQuery>
          $(window).on("load",function(){
             $(".loader-container").fadeOut(1000);
         });
+    </script>
+    <script js>
+        const 
+            nav_links_div = document.querySelector('.nav-links'),
+            menu_img_div = document.querySelector('.menu-img');
+
+        menu_img_div.addEventListener('click', () => {
+            if(nav_links_div.style.display===''){
+                nav_links_div.style.setProperty('display', 'flex');
+                menu_img_div.style.setProperty('color', 'rgb(75, 75, 66)');
+        }   else {
+                nav_links_div.style.setProperty('display', '');
+                menu_img_div.style.setProperty('color', '');
+        }
+        });
+
     </script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
