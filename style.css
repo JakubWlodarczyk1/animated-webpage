@@ -108,7 +108,9 @@ body, html {
     background: rgba(0, 0, 0,0.5);
 }
 
-.menu {
+/*  MENU  */
+
+.nav-menu {
     top:0;
     right: 20px;
     position: fixed;
@@ -123,6 +125,55 @@ body, html {
     color: rgb(75, 75, 66);
     transform: scale(1.1);
     transition: ease-in;
+}
+
+.nav-links {
+    position: fixed;
+    display: flex;
+    width: 15vw;
+    list-style: none;
+    background: rgba(128, 128, 128, 0.589);
+    align-items: flex-start;
+    margin-left: auto;
+    flex-direction: column;
+    right: 10px;
+    display: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 10px;
+}
+
+#git {
+    display: block;
+    color: black;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#menu-chapter {
+    display: block;
+    font-size: 24px;
+    margin-bottom: -10px;
+}
+
+#cake-category {
+    display: block;
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#cake-category:hover {
+    font-weight: 400;
+}
+
+#git:hover {
+    font-weight: bolder;
 }
 
 /* scrolldown arrow */
@@ -334,4 +385,32 @@ order:2;
         font-weight: 300;
         font-size: 15px;
     }
+
+    .nav-links {
+        width: 150px;
+    }
+
+    .nav-links li a {
+        margin: 5px 5px;
+    }
+
+    #git {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    
+    #menu-chapter {
+        font-size: 18px;
+        margin-bottom: -5px;
+    }
+    
+    #cake-category {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    ion-icon {
+        font-size: 52px;
+    }
+    
   }
