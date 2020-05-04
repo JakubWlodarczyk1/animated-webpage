@@ -270,3 +270,68 @@ order:2;
   background-clip: text;
   color: transparent;
 }
+
+/*   media    */ 
+
+@media only screen and (max-aspect-ratio: 16/9) {
+    .s2 {
+        padding: 0 100px;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .s2 {
+        padding: 0 20px;
+    }
+  }
+
+ @media only screen and (max-width: 500px) {
+    .s2 {
+        padding: 0 5px;
+    }
+
+    .cake-recipes {
+        font-size: 25px;
+        margin: 10px auto;
+    }
+
+    .ingredients h3 {
+        font-size: 20px;
+        margin: 5px auto;
+        margin-left: 5px;
+    }
+
+    .ingredients ul {
+        text-align: left;
+      
+      }
+
+    .ingredients ul li {
+        font-size: 10px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .ingredients {
+        width: 120%;
+    }
+
+    .cake-img {
+        height: 100%;
+        width: 80%;
+        border-radius: 10px;
+        margin: 5px auto;
+        padding-bottom: 5px;
+    }
+
+    .preparation h3 {
+        margin:10px auto;
+        font-size: 20px;
+    }
+    
+    .preparation p {
+        line-height: 1.2;
+        font-weight: 300;
+        font-size: 15px;
+    }
+  }
