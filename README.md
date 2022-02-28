@@ -1,2 +1,2 @@
 # animated-webpage
-link to website https://j0hnny02.github.io/animated-webpage/
+link to website https://jakubwlodarczyk1.github.io/animated-webpage/
